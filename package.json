@@ -1,0 +1,17 @@
+{
+  "name": "msotailwindcss",
+  "version": "1.0.0",
+  "description": "Tailwindcss ile yapılan tasarımlar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "html",
+    "template"
+  ],
+  "author": "Mustafa Oğuz",
+  "license": "ISC"
+}
