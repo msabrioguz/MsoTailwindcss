@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İki Aşamalı Doğrulama</title>
+  <link href="../assets/css/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+      <h2 class="text-2xl font-bold mb-6 text-center">İki Aşamalı Doğrulama</h2>
+      <form>
+        <div class="mb-4">
+          <label for="firstChar" class="block text-sm font-medium text-gray-700">Doğrulama Kodu</label>
+          <div class="flex space-x-3 justify-between">
+            <input type="text" id="firstChar"
+              class="mt-1 block w-10 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              required>
+            <input type="text" id="secondChar"
+              class="mt-1 block w-10 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              required>
+            <input type="text" id="thirdChar"
+              class="mt-1 block w-10 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              required>
+            <input type="text" id="forthChar"
+              class="mt-1 block w-10 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              required>
+            <input type="text" id="fifthChar"
+              class="mt-1 block w-10 p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              required>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-sm text-gray-400 text-justify">E-posta adresinize gönderilen doğrulama kodunu giriniz.</p>
+        </div>
+
+        <div class="flex items-center justify-between mb-4">
+          <!-- <button type="submit" class="bg-blue-600 border-2 border-blue-600 hover:bg-blue-700 hover:border-blue-700 text-white font-bold py-2 px-4 rounded">Onayla</button> -->
+          <a href="./forgot-password.html"
+            class="w-full bg-transparent border-2 border-blue-600 hover:bg-blue-700 text-blue-600 hover:text-white font-bold py-2 px-4 rounded text-center">Onayla</a>
+        </div>
+      </form>
+
+      <p class="mt-2 text-center text-sm text-gray-600"><a href="../index.html"
+          class="text-blue-600 hover:underline">Ana Sayfaya Dön</a></p>
+    </div>
+  </div>
+  <script>
+    // Giriş formu gönderildiğinde
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Formun varsayılan gönderimini engelle
+      alert('Giriş bilgileri gönderildi!'); // Basit bir uyarı mesajı
+    });
+  </script>
+</body>
+
+</html>
