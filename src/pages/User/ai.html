@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AI Chat</title>
+    <link href="../../assets/css/dist/output.css" rel="stylesheet">
+</head>
+<body class="h-full bg-white dark:bg-gray-900">
+    <div class="flex h-full">
+        <!-- Sidebar -->
+        <aside class="w-72 bg-gray-50 dark:bg-gray-800 p-4 hidden md:block border-r border-gray-200 dark:border-gray-700">
+            <div class="flex items-center gap-2 mb-8">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h1 class="text-xl font-bold dark:text-white">ARK</h1>
+            </div>
+
+            <!-- Search -->
+            <div class="relative mb-6">
+                <input type="search" placeholder="Search for chats..." class="w-full px-4 py-2 bg-white dark:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-600 dark:text-white">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="space-y-2">
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                    </svg>
+                    Chats
+                    <span class="ml-auto bg-gray-200 dark:bg-gray-600 px-2 py-0.5 rounded-full text-xs">1</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    Library
+                    <span class="ml-auto bg-gray-200 dark:bg-gray-600 px-2 py-0.5 rounded-full text-xs">2</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 flex flex-col">
+            <!-- Header -->
+            <header class="border-b border-gray-200 dark:border-gray-700 p-4 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden">
+                        <svg class="w-6 h-6 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <h2 class="text-lg font-semibold dark:text-white">How the model determines token</h2>
+                    <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded text-sm text-gray-600 dark:text-gray-300">GPT-4</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                        </svg>
+                    </button>
+                    <button class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Chat Messages -->
+            <div class="flex-1 overflow-auto p-4 space-y-6">
+                <div class="flex gap-4 max-w-3xl mx-auto">
+                    <div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-700 flex-shrink-0"></div>
+                    <div class="flex-1">
+                        <div class="font-medium dark:text-white mb-1">Abhii</div>
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm dark:text-gray-200">
+                            Hey, can you explain how the model determines token usage and tracks interactions?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 max-w-3xl mx-auto">
+                    <div class="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <div class="font-medium dark:text-white mb-1">ARK.io</div>
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm dark:text-gray-200">
+                            Our model counts tokens in both input and output, including spaces and special characters. Each token corresponds roughly to one word, depending on the language and complexity of the sentence. For more detailed tracking of your interactions, we use timestamps and session IDs to ensure the most relevant responses.
+                        </div>
+                        <div class="flex items-center gap-2 mt-2">
+                            <button class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                            </button>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">32 tokens</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="border-t border-gray-200 dark:border-gray-700 p-4">
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center gap-2 p-2 border-b border-gray-200 dark:border-gray-700">
+                            <button class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </button>
+                            <button class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <textarea class="w-full p-4 bg-transparent border-0 focus:ring-0 dark:text-white" rows="3" placeholder="Type your message..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Author Attribution -->
+    <div class="fixed bottom-4 right-4 text-sm text-gray-500 dark:text-gray-400">
+        <a href="https://abhirajk.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:text-primary">
+            Created by Abhiraj
+        </a>
+    </div>
+</body>
+</html>
