@@ -6,22 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Sayfası</title>
   <link href="../assets/css/dist/output.css" rel="stylesheet">
-  <style>
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
-        }
-    </style>
 </head>
 
-<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-50 to-gray-100">
-    <div class="text-center animate-fadeIn">
-        <img src="https://yemca-services.net/404.png" alt="404 Illustration" class="mx-auto w-80 animate-[float_3s_infinite] shadow-xl rounded-lg">
-        <h1 class="text-7xl font-extrabold text-blue-700 mt-6">Sanırım Kayboldunuz!</h1>
-        <p class="text-xl text-gray-700 mt-2">Aradığınız sayfayı bulamadık. Dilerseniz Ana Sayfamızı ziyaret edebilirsiniz.</p>
-        <a href="../index.html" class="mt-6 inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transform transition hover:scale-105 hover:bg-blue-700">Ana Sayfaya Dön</a>
+<body>
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8 text-center">
+    <div class="mb-8">
+      <h2 class="mt-6 text-6xl font-extrabold text-gray-900 dark:text-gray-100">404</h2>
+      <p class="mt-1 text-3xl font-bold text-gray-900 dark:text-gray-100">Sayfa Bulunamadı</p>
+      <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Üzgünüz, aradığınız sayfayı bulamadık.</p>
     </div>
+    <div class="mt-2">
+      <a href="../src"
+        class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <svg class="mr-2 -ml-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18m-9-9l9 9-9 9" />
+        </svg>
+        Ana Sayfaya Dön
+      </a>
+    </div>
+  </div>
+  <div class="mt-2 w-full max-w-2xl">
+    <div class="relative">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-gray-300 dark:border-gray-600"></div>
+      </div>
+      <div class="relative flex justify-center">
+        <span class="px-2 bg-gray-100 dark:bg-gray-800 text-sm text-gray-500 dark:text-gray-400">
+          Bunun bir hata olduğunu düşünüyorsanız lütfen destek ekibiyle iletişime geçin
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
