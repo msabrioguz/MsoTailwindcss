@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="light">
 
 <head>
   <meta charset="UTF-8">
@@ -83,13 +83,13 @@
             x-transition:leave-end="opacity-0 transform scale-95" class="bg-gray-700">
             <a href="#" @click.prevent="activePage = 'general'; sidebarOpen = false"
               class="block px-8 py-2 text-gray-200 hover:bg-gray-600"
-              :class="{ 'bg-gray-600': activePage === 'general' }">General</a>
+              :class="{ 'bg-gray-600': activePage === 'general' }"><i class="fa-regular fa-circle-dot mr-2"></i> General</a>
             <a href="#" @click.prevent="activePage = 'security'; sidebarOpen = false"
               class="block px-8 py-2 text-gray-200 hover:bg-gray-600"
-              :class="{ 'bg-gray-600': activePage === 'security' }">Security</a>
+              :class="{ 'bg-gray-600': activePage === 'security' }"><i class="fa-regular fa-circle mr-2"></i>Security</a>
             <a href="#" @click.prevent="activePage = 'notifications'; sidebarOpen = false"
               class="block px-8 py-2 text-gray-200 hover:bg-gray-600"
-              :class="{ 'bg-gray-600': activePage === 'notifications' }">Notifications</a>
+              :class="{ 'bg-gray-600': activePage === 'notifications' }"><i class="fa-regular fa-circle mr-2"></i> Notifications</a>
           </div>
         </div>
 
@@ -104,7 +104,7 @@
           <i class="fas fa-sign-out-alt mr-3"></i>Logout
         </a>
         <a href="../index.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
-          <i class="fas fa-sign-out-alt mr-3"></i>Ana Sayfaya Dön
+          <i class="fas fa-arrow-left mr-3"></i>Ana Sayfaya Dön
         </a>
       </nav>
     </aside>
@@ -129,6 +129,10 @@
             </button>
             <div class="w-8 h-8 rounded-full bg-gray-300" role="img" aria-label="User avatar"></div>
           </div>
+          <button id="theme-toggle" type="button" title="Toggle dark/light mode" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                    </button>
         </div>
       </header>
 
@@ -242,6 +246,7 @@
       </main>
     </div>
   </div>
+  <script src="../assets/js/İndex.js"></script>
 </body>
 
 </html>
