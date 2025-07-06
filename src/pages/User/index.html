@@ -20,55 +20,55 @@
 
     <!-- Sidebar -->
     <aside
-      class="fixed inset-y-0 left-0 z-50 w-64 bg-gray-800 transform transition-transform duration-300 ease-in-out md:translate-x-0">
-      <div class="flex items-center justify-between h-16 px-4 bg-gray-900">
-        <span class="text-white text-lg font-bold">Superadmin</span>
+      class="fixed inset-y-0 left-0 z-50 w-64 bg-gray-300 dark:bg-gray-800 transform transition-transform duration-300 ease-in-out md:translate-x-0">
+      <div class="flex items-center justify-between h-16 px-4 bg-gray-100 dark:bg-gray-900">
+        <span class="text-gray-600 dark:text-white text-lg font-bold">Superadmin</span>
         <button @click="sidebarOpen = false" class="text-white md:hidden" aria-label="Close sidebar">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <nav class="mt-5 overflow-y-auto h-[calc(100vh-4rem)]">
-        <a href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+        <a href="#" class="flex items-center px-4 py-2 text-gray-600 bg-gray-300 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
           <i class="fas fa-tachometer-alt mr-3"></i>Anasayfa
         </a>
         <div>
-          <button class="w-full flex items-center justify-between px-4 py-2 text-gray-100 hover:bg-gray-700">
+          <button class="w-full flex items-center justify-between px-4 py-2 text-gray-600 bg-gray-300 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <div class="flex items-center">
               <i class="fas fa-users mr-3"></i>Kullanıcılar
             </div>
             <i class="fas fa-chevron-down"></i>
           </button>
-          <div class="bg-gray-700">
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">Tüm Kullanıcılar</a>
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">Kullanıcı Ekle</a>
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">Yetkiler</a>
+          <div class="bg-gray-300 dark:bg-gray-700">
+            <a href="#" class="block px-8 py-2 hover:bg-gray-400 text-gray-600 dark:text-gray-200 dark:hover:bg-gray-600">Tüm Kullanıcılar</a>
+            <a href="#" class="block px-8 py-2 hover:bg-gray-400 text-gray-600 dark:text-gray-200 dark:hover:bg-gray-600">Kullanıcı Ekle</a>
+            <a href="#" class="block px-8 py-2 hover:bg-gray-400 text-gray-600 dark:text-gray-200 dark:hover:bg-gray-600">Yetkiler</a>
           </div>
         </div>
 
         <div>
-          <button class="w-full flex items-center justify-between px-4 py-2 text-gray-100 hover:bg-gray-700">
+          <button class="w-full flex items-center justify-between px-4 py-2 text-gray-600 bg-gray-300 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
             <div class="flex items-center">
               <i class="fas fa-cog mr-3"></i>Ayarlar
             </div>
             <i class="fas fa-chevron-down"></i>
           </button>
-          <div id="settings-menu" class="bg-gray-700">
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">
+          <div id="settings-menu" class="bg-gray-300 dark:bg-gray-700">
+            <a href="#" class="block px-8 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800">
               <i class="fa-regular fa-circle-dot mr-2"></i>Genel</a>
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">
+            <a href="#" class="block px-8 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800">
               <i class="fa-regular fa-circle mr-2"></i>Güvenlik</a>
-            <a href="#" class="block px-8 py-2 text-gray-200 hover:bg-gray-600">
+            <a href="#" class="block px-8 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-200 dark:hover:bg-gray-700 dark:bg-gray-800">
               <i class="fa-regular fa-circle mr-2"></i>Bildirimler</a>
           </div>
         </div>
 
-        <a href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+        <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700">
           <i class="fas fa-chart-bar mr-3"></i>Analist
         </a>
-        <a href="#" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+        <a href="#" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700">
           <i class="fas fa-sign-out-alt mr-3"></i>Çıkış Yap
         </a>
-        <a href="../index.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700">
+        <a href="../index.html" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700">
           <i class="fas fa-arrow-left mr-3"></i>Ana Sayfaya Dön
         </a>
       </nav>
@@ -77,8 +77,8 @@
     <!-- Main Content -->
     <div class="flex-1 flex flex-col md:ml-64">
       <header
-        class="bg-white shadow-sm h-16 flex items-center justify-between px-4 fixed top-0 right-0 left-0 md:left-64 z-30">
-        <button @click="sidebarOpen = true" class="text-gray-500 md:hidden" aria-label="Open sidebar">
+        class="bg-white dark:bg-gray-800 dark:text-white shadow-sm h-16 flex items-center justify-between px-4 fixed top-0 right-0 left-0 md:left-64 z-30">
+        <button @click="sidebarOpen = true" class="text-gray-500 dark:text-white md:hidden" aria-label="Open sidebar">
           <i class="fas fa-bars text-2xl"></i>
         </button>
         <div></div>
@@ -92,7 +92,7 @@
           </div>
           <div class="relative">
             <input type="text" placeholder="Arama yap..."
-              class="pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-700"
               aria-label="Search">
             <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
           </div>
@@ -105,44 +105,44 @@
         </div>
       </header>
 
-      <main class="p-6 mt-16 flex-1 overflow-y-auto">
+      <main class="p-6 mt-16 flex-1 overflow-y-auto dark:bg-gray-900 dark:text-white">
         <!-- Dashboard Content -->
         <div>
           <h1 class="text-2xl font-bold mb-6">Özet Bilgiler</h1>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow dark:border-gray-300 dark:border-solid dark:border">
               <div class="flex items-center">
                 <i class="fas fa-users text-blue-500 text-2xl mr-4"></i>
                 <div>
-                  <p class="text-gray-500">Toplam Kullanıcılar</p>
-                  <h3 class="text-xl font-bold">1,234</h3>
+                  <p class="text-gray-500 dark:text-gray-200">Toplam Kullanıcılar</p>
+                  <h3 class="text-xl font-bold dark:text-white">1,234</h3>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow dark:bg-gray-800 dark:border-gray-300 dark:border-solid dark:border">
               <div class="flex items-center">
                 <i class="fas fa-dollar-sign text-green-500 text-2xl mr-4"></i>
                 <div>
-                  <p class="text-gray-500">Gelir</p>
-                  <h3 class="text-xl font-bold">$12,345</h3>
+                  <p class="text-gray-500 dark:text-gray-200">Gelir</p>
+                  <h3 class="text-xl font-bold dark:text-white">$12,345</h3>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow dark:bg-gray-800 dark:border-gray-300 dark:border-solid dark:border">
               <div class="flex items-center">
                 <i class="fas fa-chart-line text-purple-500 text-2xl mr-4"></i>
                 <div>
-                  <p class="text-gray-500">Büyüme</p>
-                  <h3 class="text-xl font-bold">+15%</h3>
+                  <p class="text-gray-500 dark:text-gray-200">Büyüme</p>
+                  <h3 class="text-xl font-bold dark:text-white">+15%</h3>
                 </div>
               </div>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div class="bg-white p-6 rounded-lg shadow dark:bg-gray-800 dark:border-gray-300 dark:border-solid dark:border">
               <div class="flex items-center">
                 <i class="fas fa-tasks text-yellow-500 text-2xl mr-4"></i>
                 <div>
-                  <p class="text-gray-500">Görevler</p>
-                  <h3 class="text-xl font-bold">23</h3>
+                  <p class="text-gray-500 dark:text-gray-200">Görevler</p>
+                  <h3 class="text-xl font-bold dark:text-white">23</h3>
                 </div>
               </div>
             </div>
