@@ -95,50 +95,83 @@
 
         <h1 class="text-2xl font-bold mb-6">Notlar</h1>
         <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg mb-6">
-            <table class="table-auto w-full">
-              <thead>
-                <tr>
-                  <th class="w-1/4 px-4 py-2">
-                    <checkbox class="form-checkbox h-5 w-5 text-blue-600" aria-label="Seç"></checkbox>
-                  </th>
-                  <th class="px-4 py-2">Başlık</th>
-                  <th class="px-4 py-2">İçerik</th>
-                  <th class="px-4 py-2">Tarih</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="border px-4 py-2">
-                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" aria-label="Seç">
-                  </td>
-                  <td class="border px-4 py-2">Not 1</td>
-                  <td class="border px-4 py-2">Bu bir örnek nottur.</td>
-                  <td class="border px-4 py-2">2023-10-01</td>
-                  
-                </tr>
-                <tr>
-                  <td class="border px-4 py-2">
-                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" aria-label="Seç">
-                  </td>
-                  <td class="border px-4 py-2">Not 2</td>
-                  <td class="border px-4 py-2">Bu da başka bir örnek nottur.</td>
-                  <td class="border px-4 py-2">2023-10-02</td>
-                  
-                </tr>
-                <tr>
-                  <td class="border px-4 py-2">
-                    <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" aria-label="Seç">
-                  </td>
-                  <td class="border px-4 py-2">Not 3</td>
-                  <td class="border px-4 py-2">Notlarınızı burada görüntüleyebilirsiniz.</td>
-                  <td class="border px-4 py-2">2023-10-03</td>
-                  
-                </tr>
-              </tbody>
-            </table>
+          <div class="flex justify-between mb-3">
+            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+              Not Ekle <i class="fas fa-plus ml-2"></i>
+            </button>
+            <div class="flex items-center space-x-2">
+              <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
+                Düzenle <i class="fas fa-edit ml-2"></i>
+              </button>
+              <button class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                Sil <i class="fas fa-trash ml-2"></i>
+              </button>
+            </div>
           </div>
+          <table class="table-auto w-full">
+            <thead>
+              <tr class="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border">
+                <th class="px-4 py-2 text-left w-10 border border-gray-300 dark:border-gray-600">
+                  <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
+                </th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Başlık</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">İçerik</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Türü</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Başlangıç</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Bitiş</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Periyot</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Oluşturulma</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
+                  <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 1</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Bu bir örnek nottur.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
+                    class="bg-green-500 rounded-full py-2 px-4 text-xs">Normal</span></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
+                  <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 2</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Bu da başka bir örnek nottur.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
+                    class="bg-red-500 rounded-full py-2 px-4 text-xs">Tekrarlanan</span></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">Aylık</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
+                  <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 3</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Notlarınızı burada
+                  görüntüleyebilirsiniz.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
+                    class="bg-yellow-500 rounded-full py-2 px-4 text-xs">Tek seferlik</span></td>
+                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
+                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
+                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
+
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
             <form class="mb-4">
               <label for="noteTitle" class="block text-gray-700 dark:text-gray-300 mb-2">Başlık</label>
