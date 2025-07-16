@@ -7,6 +7,7 @@
   <title>Notlar</title>
   <link href="../../assets/css/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body class="bg-gray-100 font-sans">
@@ -28,7 +29,7 @@
         </button>
       </div>
       <nav class="mt-5 overflow-y-auto h-[calc(100vh-4rem)]">
-        <a href="#"
+        <a href="./index.html"
           class="flex items-center px-4 py-2 text-gray-600 bg-gray-300 hover:bg-gray-400 dark:text-gray-100 dark:hover:bg-gray-700 dark:bg-gray-800">
           <i class="fas fa-tachometer-alt mr-3"></i>Anasayfa
         </a>
@@ -69,10 +70,15 @@
         <div></div>
         <div class="flex items-center">
           <div class="mr-5">
-            <button id="theme-toggle" type="button" title="Toggle dark/light mode"
-              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-              <i class="fas fa-moon dark:hidden"></i>
-              <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+            <button id="theme-toggle" class="h-10 w-10 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+              <svg class="fill-violet-700 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+              </svg>
+              <svg class="fill-yellow-500 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  fill-rule="evenodd" clip-rule="evenodd"></path>
+              </svg>
             </button>
           </div>
           <div class="relative">
@@ -161,29 +167,195 @@
                   görüntüleyebilirsiniz.</td>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
                     class="bg-yellow-500 rounded-full py-2 px-4 text-xs">Tek seferlik</span></td>
-                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
-                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
-                  <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
 
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="flex items-center justify-center">
+          <div class="py-3 border rounded-lg dark:border-gray-600">
+            <ol
+              class="flex items-center text-sm text-gray-500 divide-x rtl:divide-x-reverse divide-gray-300 dark:text-gray-400 dark:divide-gray-600">
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 transition text-yellow-600"
+                  aria-label="Previous" rel="prev">
+                  <svg class="w-5 h-5 rtl:scale-x-[-1]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </li>
+
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none transition text-yellow-600 focus:underline bg-yellow-500/10 ring-2 ring-yellow-500">
+                  <span>1</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>2</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>3</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>4</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>5</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>6</span>
+                </button>
+              </li>
+              <li>
+                <button disabled="" type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none filament-tables-pagination-item-disabled cursor-not-allowed pointer-events-none opacity-70">
+
+                  <span>...</span>
+                </button>
+              </li>
+
+
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>9</span>
+                </button>
+              </li>
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition">
+
+                  <span>10</span>
+                </button>
+              </li>
+
+              <li>
+                <button type="button"
+                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 transition text-yellow-600"
+                  aria-label="Next" rel="next">
+                  <svg class="w-5 h-5 rtl:scale-x-[-1]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
 
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
             <form class="mb-4">
               <label for="noteTitle" class="block text-gray-700 dark:text-gray-300 mb-2">Başlık</label>
-              <input type="text" id="noteTitle" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white"
+              <input type="text" id="noteTitle" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
                 placeholder="Not başlığını girin">
               <label for="noteContent" class="block text-gray-700 dark:text-gray-300 mt-4 mb-2">İçerik</label>
-              <textarea id="noteContent" rows="4" class="w-full p-2 border rounded-lg dark:bg-gray-700 dark:text-white"
+              <textarea id="noteContent" rows="4" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
                 placeholder="Not içeriğini girin"></textarea>
-              <button type="submit"
-                class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                Notu Kaydet
-              </button>
+              <div class="flex justify-between my-4">
+                <div>
+                  <lable class="text-sm">Periyot Tarihi</lable> <br>
+                  <input id="datepicker" class="border border-gray-300 rounded px-3 py-2 w-56 dark:text-black dark:bg-gray-700"
+                    type="text" placeholder="Tarih Seçin" />
+                </div>
+                <div class="flex items-center justify-center">
+                  <div class="group relative cursor-pointer">
+                    <span class="text-sm">Periyot</span>
+                    <div class="flex items-center justify-between space-x-5 border dark:bg-gray-700 px-4">
+                      <a class="menu-hover my-1 py-1 text-gray-400 lg:mx-4" onClick="">
+                        Periyot
+                      </a>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="h-6 w-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div
+                      class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
+
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Günlük
+                      </a>
+
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Aylık
+                      </a>
+
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                        Yıllık
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between mt-4">
+                <label class="flex items-center space-x-3 cursor-pointer">
+                  <div class="relative">
+                    <input type="checkbox" class="sr-only peer dark:text-black">
+                    <div
+                      class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                    </div>
+                    <div
+                      class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                    </div>
+                  </div>
+                  <span class="text-black dark:text-white text-sm">Tekrarlanan</span>
+                </label>
+                <label class="flex items-center space-x-3 cursor-pointer">
+                  <div class="relative">
+                    <input type="checkbox" class="sr-only peer">
+                    <div
+                      class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-yellow-600 transition-colors duration-300">
+                    </div>
+                    <div
+                      class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                    </div>
+                  </div>
+                  <span class="text-black dark:text-white text-sm">Tek Seferlik</span>
+                </label>
+              </div>
+              <div class="flex flex-col justify-center mt-4">
+                <button type="submit"
+                  class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  Notu Kaydet
+                </button>
+              </div>
             </form>
           </div>
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
@@ -198,6 +370,13 @@
     </div>
   </div>
   <script src="../../assets/js/İndex.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#datepicker", {
+      // Configuration options for Flatpickr
+      // You can customize the appearance and behavior here
+    });
+  </script>
 </body>
 
 </html>

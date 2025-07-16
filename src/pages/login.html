@@ -25,13 +25,22 @@
             class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
             required>
         </div>
-        <div class="flex items-center mb-4">
-          <input type="checkbox" id="remember"
-            class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-          <label for="remember" class="ml-2 text-sm text-gray-700">Beni Hatırla</label>
+        <div class="mb-4">
+          <label class="flex items-center space-x-3 cursor-pointer">
+            <div class="relative">
+              <input type="checkbox" class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+              </div>
+              <div
+                class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+              </div>
+            </div>
+            <span class="text-sm">Beni Hatırla</span>
+          </label>
         </div>
         <div class="flex items-center justify-between mb-4">
-          <button type="submit" class="bg-blue-600 border-2 border-blue-600 hover:bg-blue-700 hover:border-blue-700 text-white font-bold py-2 px-4 rounded">Giriş
+          <button type="submit"
+            class="bg-blue-600 border-2 border-blue-600 hover:bg-blue-700 hover:border-blue-700 text-white font-bold py-2 px-4 rounded">Giriş
             Yap</button>
           <a href="./forgot-password.html"
             class="bg-transparent border-2 border-blue-600 hover:bg-blue-700 text-blue-600 hover:text-white font-bold py-2 px-4 rounded">Şifremi
