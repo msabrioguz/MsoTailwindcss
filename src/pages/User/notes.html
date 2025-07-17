@@ -286,8 +286,9 @@
               <div class="flex justify-between my-4">
                 <div>
                   <lable class="text-sm">Periyot Tarihi</lable> <br>
-                  <input id="datepicker" class="border border-gray-300 rounded px-3 py-2 w-56 dark:text-black dark:bg-gray-700"
-                    type="text" placeholder="Tarih Seçin" />
+                  <input id="datepicker"
+                    class="border border-gray-300 rounded px-3 py-2 w-56 dark:text-white dark:bg-gray-700" type="text"
+                    placeholder="Tarih Seçin" />
                 </div>
                 <div class="flex items-center justify-center">
                   <div class="group relative cursor-pointer">
@@ -297,16 +298,20 @@
                         Periyot
                       </a>
                       <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="h-6 w-6">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                       </span>
                     </div>
                     <div
                       class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                      <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Günlük</a>
-                      <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Aylık</a>
-                      <a class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Yıllık</a>
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Günlük</a>
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Aylık</a>
+                      <a
+                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Yıllık</a>
                     </div>
                   </div>
                 </div>
@@ -345,13 +350,178 @@
               </div>
             </form>
           </div>
-          <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
-            <h2 class="text-xl font-semibold mb-4">Notlar</h2>
-            <ul class="list-disc pl-5">
-              <li class="mb-2">Not 1: Bu bir örnek nottur.</li>
-              <li class="mb-2">Not 2: Bu da başka bir örnek nottur.</li>
-              <li class="mb-2">Not 3: Notlarınızı burada görüntüleyebilirsiniz.</li>
-            </ul>
+          <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg col-span-2">
+            <table class="items-center w-full bg-transparent border-collapse">
+              <thead>
+                <tr>
+                  <th
+                    class="px-4 bg-gray-50 dark:bg-gray-600 text-gray-700 dark:text-white align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                    Yapılacaklar</th>
+                  <th
+                    class="px-4 bg-gray-50 dark:bg-gray-600 text-gray-700 dark:text-white align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                    Periyot</th>
+                  <th
+                    class="px-4 bg-gray-50 dark:bg-gray-600 text-gray-700 dark:text-white align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                    Tarih</th>
+                  <th
+                    class="px-4 bg-gray-50 dark:bg-gray-600 text-gray-700 dark:text-white align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
+                    Durumu
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100 dark:divide-gray-600">
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">Yedek Kontrol</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-green-600 whitespace-nowrap p-4">
+                    Günlük</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    1 Mayıs 2025</td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">10%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-green-600 h-2 rounded-sm" style="width: 10%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">Wsus Update</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-yellow-600 whitespace-nowrap p-4">
+                    Aylık</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    10 Temmuz 2025</td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">25%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-green-400 h-2 rounded-sm" style="width: 25%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">STDS Evrakları</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-yellow-600 whitespace-nowrap p-4">
+                    Aylık</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    31 Kasım 2025</td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">35%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-teal-400 h-2 rounded-sm" style="width: 35%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">Veritabanı Geri Yükleme Testi</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-yellow-600 whitespace-nowrap p-4">
+                    Aylık</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    25 Aralık 2025</td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">50%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-yellow-500 h-2 rounded-sm" style="width: 50%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">SYPD Evrakları</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-red-600 whitespace-nowrap p-4">
+                    Yıllık</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    1 Ocak 2026
+                  </td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">65%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-orange-600 h-2 rounded-sm" style="width: 65%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">Hbys Güncellemesi</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-green-600 whitespace-nowrap p-4">
+                    Günlük</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    1 Ocak 2026
+                  </td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">75%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-rose-600 h-2 rounded-sm" style="width: 75%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="text-gray-500 dark:text-gray-400">
+                  <td class="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
+                    <a href="#">Yazıcı Sayaç</a>
+                  </td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-yellow-600 whitespace-nowrap p-4">
+                    Aylık</td>
+                  <td
+                    class="border-t-0 px-4 align-middle text-xs font-medium text-gray-900 dark:text-white whitespace-nowrap p-4">
+                    1 Mart 2026
+                  </td>
+                  <td class="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                    <div class="flex items-center">
+                      <span class="mr-2 text-xs font-medium">97%</span>
+                      <div class="relative w-full">
+                        <div class="w-full bg-gray-200 rounded-sm h-2">
+                          <div class="bg-red-600 h-2 rounded-sm" style="width: 97%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
       </main>
     </div>
