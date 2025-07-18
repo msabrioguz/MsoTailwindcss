@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notlar</title>
+  <title>Kullanıcılar</title>
   <link href="../../assets/css/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -102,7 +102,8 @@
         <nav class="flex mb-5" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2">
             <li class="inline-flex items-center">
-              <a href="./index.html" class="text-gray-700 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-600 inline-flex items-center">
+              <a href="./index.html"
+                class="text-gray-700 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-600 inline-flex items-center">
                 <svg class="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
@@ -119,7 +120,8 @@
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clip-rule="evenodd"></path>
                 </svg>
-                <a href="#" class="text-gray-700 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-600 ml-1 md:ml-2 text-sm font-medium">Notlar</a>
+                <a href="#"
+                  class="text-gray-700 hover:text-gray-900 dark:text-gray-500 dark:hover:text-gray-600 ml-1 md:ml-2 text-sm font-medium">Kullanıcılar</a>
               </div>
             </li>
           </ol>
@@ -127,7 +129,7 @@
         <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg mb-6">
           <div class="flex justify-between mb-3">
             <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-              Not Ekle <i class="fas fa-plus ml-2"></i>
+              Kullanıcı Ekle <i class="fas fa-plus ml-2"></i>
             </button>
             <div class="flex items-center space-x-2">
               <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
@@ -141,16 +143,16 @@
           <table class="table-auto w-full">
             <thead>
               <tr class="bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border">
-                <th class="px-4 py-2 text-left w-10 border border-gray-300 dark:border-gray-600">
+                <th class="px-4 py-2 w-10 border border-gray-300 dark:border-gray-600">
                   <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
                 </th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Başlık</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">İçerik</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Türü</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Başlangıç</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Bitiş</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Periyot</th>
-                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Oluşturulma</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Profil</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Kullanıcı Adı</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Adı Soyadı</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">E-Posta Adresi</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Rolü</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Kayıt Zamanı</th>
+                <th class="px-4 py-2 border border-gray-300 dark:border-gray-600">Son Oturum Zamanı</th>
               </tr>
             </thead>
             <tbody>
@@ -158,45 +160,54 @@
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
                   <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
                 </td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 1</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Bu bir örnek nottur.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center table-cell justify-center">
+                  <image src="https://placebeard.it/320/320" class="h-12 w-12 rounded-full border-2 border-gray-500 table-cell text-center">
+                  </image>
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><a href="#">mustafa.oguz</a></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">Mustafa Oğuz</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">mustafa.oguz@eposta.com
+                </td>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
-                    class="bg-green-500 rounded-full py-2 px-4 text-xs">Normal</span></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-
+                    class="bg-red-500 rounded-full py-2 px-4 text-xs">Admin</span></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025 - 12:32:12</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">02.01.2025 - 09:10:10</td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
                   <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
                 </td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 2</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Bu da başka bir örnek nottur.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
+                  <image src="https://placebeard.it/320/320" class="h-12 w-12 rounded-full border-2 border-gray-500">
+                  </image>
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><a href="#">mustafa.oguz</a></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">Mustafa Oğuz</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">mustafa.oguz@eposta.com
+                </td>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
-                    class="bg-red-500 rounded-full py-2 px-4 text-xs">Tekrarlanan</span></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">Aylık</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-
+                    class="bg-red-500 rounded-full py-2 px-4 text-xs">Admin</span></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025 - 12:32:12</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">02.01.2025 - 09:10:10</td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
                   <input type="checkbox" class="form-checkbox text-blue-600" aria-label="Seç">
                 </td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Not 3</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">Notlarınızı burada
-                  görüntüleyebilirsiniz.</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600">
+                  <image src="https://placebeard.it/320/320" class="h-12 w-12 rounded-full border-2 border-gray-500">
+                  </image>
+                </td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><a href="#">mustafa.oguz</a></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">Mustafa Oğuz</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">mustafa.oguz@eposta.com
+                </td>
                 <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"><span
-                    class="bg-yellow-500 rounded-full py-2 px-4 text-xs">Tek seferlik</span></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">31.01.2025</td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center"></td>
-                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025</td>
-
+                    class="bg-red-500 rounded-full py-2 px-4 text-xs">Admin</span></td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">01.01.2025 - 12:32:12</td>
+                <td class="border px-4 py-2 border-gray-300 dark:border-gray-600 text-center">02.01.2025 - 09:10:10</td>
               </tr>
+
             </tbody>
           </table>
         </div>
