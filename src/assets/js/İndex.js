@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Dark/Light mode toggle
   const themeToggle = document.getElementById("theme-toggle");
   const html = document.documentElement;
+  const tooltip = document.getElementById('tooltip');
 
   // Check for saved user preference or use system preference
   const savedTheme =

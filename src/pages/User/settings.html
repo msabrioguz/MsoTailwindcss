@@ -129,83 +129,94 @@
             </li>
           </ol>
         </nav>
+        <!--- Content -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
-            <form class="mb-4">
-              <label for="noteTitle" class="block text-gray-700 dark:text-gray-300 mb-2">Bildirim</label>
-              <input type="text" id="noteTitle" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
-                placeholder="Not başlığını girin">
-              <label for="noteContent" class="block text-gray-700 dark:text-gray-300 mt-4 mb-2">İçerik</label>
-              <textarea id="noteContent" rows="4" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
-                placeholder="Not içeriğini girin"></textarea>
-              <div class="flex justify-between my-4">
-                <div>
-                  <lable class="text-sm">Periyot Tarihi</lable> <br>
-                  <input id="datepicker"
-                    class="border border-gray-300 rounded px-3 py-2 w-56 dark:text-white dark:bg-gray-700" type="text"
-                    placeholder="Tarih Seçin" />
-                </div>
-                <div class="flex items-center justify-center">
-                  <div class="group relative cursor-pointer">
-                    <span class="text-sm">Periyot</span>
-                    <div class="flex items-center justify-between space-x-5 border dark:bg-gray-700 px-4">
-                      <a class="menu-hover my-1 py-1 text-gray-400 lg:mx-4" onClick="">
-                        Periyot
-                      </a>
-                      <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor" class="h-6 w-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </div>
-                    <div
-                      class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible">
-                      <a
-                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Günlük</a>
-                      <a
-                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Aylık</a>
-                      <a
-                        class="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">Yıllık</a>
-                    </div>
+            <h1 class="text-lg">Bildirim</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Bildirim ayarlarınızı buradan yönetebilirsiniz.</p>
+            <div class="mt-4 flex justify-between">
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
                   </div>
                 </div>
-              </div>
-              <div class="flex justify-between mt-4">
-                <label class="flex items-center space-x-3 cursor-pointer">
-                  <div class="relative">
-                    <input type="checkbox" class="sr-only peer dark:text-black">
-                    <div
-                      class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
-                    </div>
-                    <div
-                      class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
-                    </div>
+                <span class="text-black dark:text-white text-sm">E-Posta</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black">
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
                   </div>
-                  <span class="text-black dark:text-white text-sm">Tekrarlanan</span>
-                </label>
-                <label class="flex items-center space-x-3 cursor-pointer">
-                  <div class="relative">
-                    <input type="checkbox" class="sr-only peer">
-                    <div
-                      class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-yellow-600 transition-colors duration-300">
-                    </div>
-                    <div
-                      class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
-                    </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
                   </div>
-                  <span class="text-black dark:text-white text-sm">Tek Seferlik</span>
-                </label>
-              </div>
-              <div class="flex flex-col justify-center mt-4">
-                <button type="submit"
-                  class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  Notu Kaydet
-                </button>
-              </div>
-            </form>
+                </div>
+                <span class="text-black dark:text-white text-sm">Sms</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">Uygulama</span>
+              </label>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
+            <h1 class="text-lg">Bildirim</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Bildirim ayarlarınızı buradan yönetebilirsiniz.</p>
+            <div class="mt-4 flex justify-between">
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">E-Posta</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black">
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">Sms</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">Uygulama</span>
+              </label>
+            </div>
           </div>
         </div>
+        <!-- End Content -->
       </main>
     </div>
   </div>
