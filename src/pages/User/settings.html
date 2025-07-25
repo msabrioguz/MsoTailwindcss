@@ -134,17 +134,23 @@
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
             <h1 class="text-xl">Parola Değiştirme</h1>
             <p class="text-gray-600 dark:text-gray-400 mt-2">Parolanızı buradan değiştirebilirsiniz.</p>
-            
+
             <form class="mb-4">
               <label for="currentPassword" class="block text-gray-700 dark:text-gray-300 mb-2">Mevcut Parola</label>
-              <input type="password" id="currentPassword" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white mb-2"
+              <input type="password" id="currentPassword"
+                class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white mb-2"
                 placeholder="Mevcut parolanızı girin">
               <label for="password" class="block text-gray-700 dark:text-gray-300 mb-2">Parola</label>
-              <input type="password" id="password" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white mb-2" placeholder="Yeni parolanızı girin">
+              <input type="password" id="password"
+                class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white mb-2"
+                placeholder="Yeni parolanızı girin">
               <label for="passwordAgain" class="block text-gray-700 dark:text-gray-300 mb-2">Parola Tekrarı</label>
-              <input type="password" id="passwordAgain" class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white" placeholder="Parolanızı tekrar girin">
+              <input type="password" id="passwordAgain"
+                class="w-full p-2 border rounded dark:bg-gray-700 dark:text-white"
+                placeholder="Parolanızı tekrar girin">
               <div class="flex flex-col justify-center mt-4">
-                <span class="text-gray-600 dark:text-gray-400 mb-2">Parolanızı değiştirmek için lütfen mevcut parolanızı girin.</span>
+                <span class="text-gray-600 dark:text-gray-400 mb-2">Parolanızı değiştirmek için lütfen mevcut parolanızı
+                  girin.</span>
                 <button type="submit"
                   class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
                   Parola Değiştir
@@ -152,48 +158,7 @@
               </div>
             </form>
           </div>
-          <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
-            <h1 class="text-lg">Bildirim</h1>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Bildirim ayarlarınızı buradan yönetebilirsiniz.</p>
-            <div class="mt-4 flex justify-between">
-              <label class="flex items-center space-x-3 cursor-pointer">
-                <div class="relative">
-                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
-                  <div
-                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
-                  </div>
-                  <div
-                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
-                  </div>
-                </div>
-                <span class="text-black dark:text-white text-sm">E-Posta</span>
-              </label>
-              <label class="flex items-center space-x-3 cursor-pointer">
-                <div class="relative">
-                  <input type="checkbox" class="sr-only peer dark:text-black">
-                  <div
-                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
-                  </div>
-                  <div
-                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
-                  </div>
-                </div>
-                <span class="text-black dark:text-white text-sm">Sms</span>
-              </label>
-              <label class="flex items-center space-x-3 cursor-pointer">
-                <div class="relative">
-                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
-                  <div
-                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
-                  </div>
-                  <div
-                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
-                  </div>
-                </div>
-                <span class="text-black dark:text-white text-sm">Uygulama</span>
-              </label>
-            </div>
-          </div>
+
           <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
             <h1 class="text-lg">Güvenlik</h1>
             <p class="text-gray-600 dark:text-gray-400 mt-2">İkili doğrulama sistem ayarlarınızı buradan
@@ -234,6 +199,49 @@
                   </div>
                 </div>
                 <span class="text-black dark:text-white text-sm">Authenticator</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 shadow-md p-5 rounded-lg">
+            <h1 class="text-lg">Bildirim</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Bildirim ayarlarınızı buradan yönetebilirsiniz.</p>
+            <div class="mt-4 flex justify-between">
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">E-Posta</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black">
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">Sms</span>
+              </label>
+              <label class="flex items-center space-x-3 cursor-pointer">
+                <div class="relative">
+                  <input type="checkbox" class="sr-only peer dark:text-black" checked>
+                  <div
+                    class="w-11 h-6 bg-gray-700 rounded-full peer-checked:bg-blue-600 transition-colors duration-300">
+                  </div>
+                  <div
+                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:left-6">
+                  </div>
+                </div>
+                <span class="text-black dark:text-white text-sm">Uygulama</span>
               </label>
             </div>
           </div>
